@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="Download and install the Eclipse IDE as a Flatpak application." />
+		<meta name="author" content="Mat Booth <mat.booth@redhat.com>" />
+		<link rel="icon" href="favicon.ico" />
+		<title>Eclipse Flatpaks</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+		<!-- Custom styles for this site -->
+		<link href="flatpak.css" rel="stylesheet" />
+	</head>
+	<body>
+		<main role="main">
+
+			<!-- Main jumbotron for a primary marketing message or call to action -->
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="display-3">Eclipse Flatpaks</h1>
+					<p>The best way to get Eclipse on Linux</p>
+				</div>
+			</div>
+
+			<div class="container">
+				<p>Flatpak is installed by default on Fedora. For other distros, follow the <a href="https://flatpak.org/setup/">Flatpak quick setup</a> guide. Now you can add the repository in one of two ways:</p>
+				<p></p>
+				<h2>Installing via GNOME Software</h2>
+				<p>On most distros, you can simply <a href="/flatpak/nightly/eclipse.flatpakrepo">download the repository file</a> and use GNOME Software to install it. Then you can use GNOME Software to browse all the Eclipse products to install from the repository in the usual way.</p>
+				<p>Alternatively, you can download one of the following Flatpak reference files and use GNOME Software to directly install your prefered Eclipse product:</p>
+				<div class="row">
+					<div class="col-md-4">
+						<h4>Eclipse Platform</h4>
+						<p>The Eclipse Platform only.</p>
+						<p><a class="btn btn-secondary" href="/flatpak/nightly/org.eclipse.Platform.flatpakref" role="button">Install</a></p>
+					</div>
+					<div class="col-md-4">
+						<h4>Eclipse SDK</h4>
+						<p>The Eclipse SDK includes the Eclipse Platform, Java Development Tools (JDT), and Plug-in Development Environment (PDE).</p>
+						<p><a class="btn btn-secondary" href="/flatpak/nightly/org.eclipse.Sdk.flatpakref" role="button">Install</a></p>
+					</div>
+				</div>
+				<p></p>
+				<h2>Installing via the Command Line</h2>
+				<p>From the command line, run:</p>
+				<pre><code><span class="unselectable">	$ </span>flatpak remote-add --if-not-exists eclipse-nightly http://eclipse.matbooth.co.uk/flatpak/nightly/eclipse.flatpakrepo</code></pre>
+				<p>Then you can list all the Eclipse products that are available from the repository by running:</p>
+				<pre><code><span class="unselectable">	$ </span>flatpak remote-ls eclipse-nightly</code></pre>
+				<p>And install your favourite Eclipse product by running, for example:</p>
+				<pre><code><span class="unselectable">	$ </span>flatpak install eclipse-nightly org.eclipse.Platform</code></pre>
+				<p>For more information about using Flatpak from the command line, <a href="http://docs.flatpak.org/en/latest/using-flatpak.html#basic-commands">see the documentation</a>.</p>
+				<hr>
+
+				<footer>
+					<p>Copyright © 2018 Red Hat, Inc.</p>
+				</footer>
+			</div> <!-- /container -->
+		</main>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
