@@ -27,7 +27,6 @@
 
 			<div class="container">
 				<p>Flatpak is installed by default on Fedora. For other distros, follow the <a href="https://flatpak.org/setup/">Flatpak quick setup</a> guide. Now you can add the repository in one of two ways:</p>
-				<p></p>
 				<h2>Installing via GNOME Software</h2>
 				<p>On most distros, you can simply <a href="/flatpak/nightly/eclipse.flatpakrepo">download the repository file</a> and use GNOME Software to install it. Then you can use GNOME Software to browse all the Eclipse products to install from the repository in the usual way.</p>
 				<p>Alternatively, you can download one of the following Flatpak reference files and use GNOME Software to directly install your prefered Eclipse product:</p>
@@ -43,7 +42,6 @@
 						<p><a class="btn btn-secondary" href="/flatpak/nightly/org.eclipse.Sdk.flatpakref" role="button">Install</a></p>
 					</div>
 				</div>
-				<p></p>
 				<h2>Installing via the Command Line</h2>
 				<p>From the command line, run:</p>
 				<pre><code><span class="unselectable">	$ </span>flatpak remote-add --if-not-exists eclipse-nightly http://eclipse.matbooth.co.uk/flatpak/nightly/eclipse.flatpakrepo</code></pre>
@@ -52,6 +50,8 @@
 				<p>And install your favourite Eclipse product by running, for example:</p>
 				<pre><code><span class="unselectable">	$ </span>flatpak install eclipse-nightly org.eclipse.Platform</code></pre>
 				<p>For more information about using Flatpak from the command line, <a href="http://docs.flatpak.org/en/latest/using-flatpak.html#basic-commands">see the documentation</a>.</p>
+				<h2>Reporting Bugs</h2>
+				<p>If you enocunter any bugs specific to the Flatpak distribution of Eclipse, <a href="https://github.com/mbooth101/eclipse-flatpak/issues">please file them here</a>.
 				<hr>
 
 				<footer>
