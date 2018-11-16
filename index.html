@@ -20,15 +20,17 @@
 			<!-- Main jumbotron for a primary marketing message or call to action -->
 			<div class="jumbotron">
 				<div class="container">
-					<h1 class="display-3">Eclipse Flatpaks</h1>
+					<h1 class="display-3">Eclipse Nightly Flatpaks</h1>
 					<p>The best way to get Eclipse on Linux</p>
 				</div>
 			</div>
 
 			<div class="container">
-				<p>Please follow the <a href="https://flatpak.org/setup/">Flatpak quick setup</a> guide to install Flatpak and configure the Flathub repository on your system. Now you can add this Eclipse repository in one of two ways:</p>
+				<p>Please first follow the <a href="https://flatpak.org/setup/">Flatpak quick setup</a> guide to install Flatpak on your system and configure the Flathub repository.</p>
+				<p>Now you can add the Eclipse Nightly repository in one of two ways:</p>
 				<h2>Installing via GNOME Software</h2>
-				<p>On most distros, you can simply <a href="/flatpak/nightly/eclipse.flatpakrepo">download the repository file</a> and use GNOME Software to install it. Then you can use GNOME Software to browse all the Eclipse products to install from the repository in the usual way.</p>
+				<p>On most distros, you can simply download Flatpak repository files and use GNOME Software to open and install them.<p>
+				<p>If you haven't already done so, first you must <a href="https://flathub.org/repo/flathub.flatpakrepo">download and repository file for Flathub</a>, from which for pre-requisites of Eclipse will be fetched, before then <a href="/flatpak/nightly/eclipse.flatpakrepo">downloading the Eclipse Nightly repository file</a>. Once installed, you can use GNOME Software to browse all the available Eclipse products in the usual way.</p>
 				<p>Alternatively, you can download one of the following Flatpak reference files and use GNOME Software to directly install your prefered Eclipse product:</p>
 				<div class="row">
 					<div class="col-md-4">
@@ -43,12 +45,15 @@
 					</div>
 				</div>
 				<h2>Installing via the Command Line</h2>
-				<p>From the command line, run:</p>
+				<p>If you haven't done so already, add the Flathub repository from which pre-requisites of Eclipse will be fetched:</p>
+				<pre><code><span class="unselectable">	$ </span>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</code></pre>
+				<p>And add the Eclipse Nightly repository:</p>
 				<pre><code><span class="unselectable">	$ </span>flatpak remote-add --if-not-exists eclipse-nightly http://eclipse.matbooth.co.uk/flatpak/nightly/eclipse.flatpakrepo</code></pre>
-				<p>Then you can list all the Eclipse products that are available from the repository by running:</p>
+				<p>Then you can list all the Eclipse products that are available from the repository:</p>
 				<pre><code><span class="unselectable">	$ </span>flatpak remote-ls eclipse-nightly</code></pre>
-				<p>And install your favourite Eclipse product by running, for example:</p>
-				<pre><code><span class="unselectable">	$ </span>flatpak install eclipse-nightly org.eclipse.Platform</code></pre>
+				<p>And install your favourite Eclipse product by running one of the following:</p>
+				<pre><code><span class="unselectable">	$ </span>flatpak install eclipse-nightly org.eclipse.Platform
+<span class="unselectable">	$ </span>flatpak install eclipse-nightly org.eclipse.Sdk</code></pre>
 				<p>For more information about using Flatpak from the command line, <a href="http://docs.flatpak.org/en/latest/using-flatpak.html#basic-commands">see the documentation</a>.</p>
 				<h2>Reporting Bugs</h2>
 				<p>If you enocunter any bugs specific to the Flatpak distribution of Eclipse, <a href="https://github.com/mbooth101/eclipse-flatpak/issues">please file them here</a>.
