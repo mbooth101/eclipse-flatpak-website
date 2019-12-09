@@ -1,3 +1,3 @@
 [submodule "flathub-api-stats-generator"]
 	path = flathub-api-stats-generator
-	url = git@gitlab.com:mbooth101/flathub-api-stats-generator.git
+	url = https://gitlab.com/mbooth101/flathub-api-stats-generator.git
