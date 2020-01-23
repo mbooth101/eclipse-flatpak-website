@@ -19,7 +19,7 @@ loadJSON(function(response) {
 	var data = JSON.parse(response);
 	var div = document.getElementById("stats");
 	for(var app in data) {
-		var html = "<tr><th>" + app + "</th><th>Hits</th><th>Hits (Delta Downloads)</th></tr>";
+		var html = "<tr><th>" + app + "</th><th>Downloads †</th><th>Updates ‡</th></tr>";
 		for(var month in data[app]) {
 			html += "<tr><td>" + month + "</td><td>" + data[app][month][0] + "</td><td>" + data[app][month][1] + "</td></tr>";
 		}
@@ -46,6 +46,8 @@ th, td {
 	<body>
 		<h2>Monthly Download Stats</h2>
 		<div id="stats"></div>
+		<p>† Total number of downloads (installs and updates) for the period</p>
+		<p>‡ Number of those downloads that were updates</p>
 		<h2>Daily Download Stats</h2>
 		<img src="charts/downloads.png" />
 	</body>
