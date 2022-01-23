@@ -49,25 +49,25 @@ eclipse-nightly  Eclipse Platform Repository  http://eclipse.matbooth.co.uk/flat
 				<p>You can add the Eclipse Nightly repository in one of two ways:</p>
 				<h2>Installing via GNOME Software</h2>
 				<p>On most distros, you can simply download Flatpak repository files and use GNOME Software to open and install them.<p>
-				<p>If you haven't already done so, first you must <a href="https://flathub.org/repo/flathub.flatpakrepo">download the repository file for Flathub</a>, from which for pre-requisites of Eclipse will be fetched. Then <a href="eclipse-nightly.flatpakrepo">download the Eclipse Nightly repository file</a>. Once installed, you can use GNOME Software to browse all the available Eclipse products in the usual way.</p>
+				<p>If you haven't already done so, first you must <a href="https://flathub.org/repo/flathub.flatpakrepo">download the repository file for Flathub</a>, from which for pre-requisites of Eclipse will be fetched. Then <a href="https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo">download the Eclipse Nightly repository file</a>. Once installed, you can use GNOME Software to browse all the available Eclipse products in the usual way.</p>
 				<p>Alternatively, you can download one of the following Flatpak reference files and use GNOME Software to directly install your prefered Eclipse product:</p>
 				<div class="row">
 					<div class="col-md-4">
 						<h4>Eclipse Platform</h4>
 						<p>The Eclipse Platform only.</p>
-						<p><a class="btn btn-primary" href="../flatpak-I-builds/org.eclipse.Platform.flatpakref" role="button">Install</a></p>
+						<p><a class="btn btn-primary" href="https://download.eclipse.org/linuxtools/flatpak-I-builds/org.eclipse.Platform.flatpakref" role="button">Install</a></p>
 					</div>
 					<div class="col-md-4">
 						<h4>Eclipse SDK</h4>
 						<p>The Eclipse SDK includes the Eclipse Platform, Java Development Tools (JDT), and Plug-in Development Environment (PDE).</p>
-						<p><a class="btn btn-primary" href="../flatpak-I-builds/org.eclipse.Sdk.flatpakref" role="button">Install</a></p>
+						<p><a class="btn btn-primary" href="https://download.eclipse.org/linuxtools/flatpak-I-builds/org.eclipse.Platform.flatpakref" role="button">Install</a></p>
 					</div>
 				</div>
 				<h2>Installing via the Command Line</h2>
 				<p>If you haven't done so already, add the Flathub repository from which pre-requisites of Eclipse will be fetched:</p>
 				<pre><code><span class="unselectable">$ </span>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</code></pre>
 				<p>And add the Eclipse Nightly repository:</p>
-				<pre><code><span class="unselectable">$ </span>flatpak remote-add --if-not-exists eclipse-nightly https://download.eclipse.org/linuxtools/flatpak/eclipse-nightly.flatpakrepo</code></pre>
+				<pre><code><span class="unselectable">$ </span>flatpak remote-add --if-not-exists eclipse-nightly https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo</code></pre>
 				<p>Then you can list all the Eclipse products that are available from the repository:</p>
 				<pre><code><span class="unselectable">$ </span>flatpak remote-ls eclipse-nightly</code></pre>
 				<p>And install your favourite Eclipse product by running one of the following:</p>
